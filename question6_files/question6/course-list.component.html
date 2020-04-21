@@ -1,0 +1,8 @@
+<div class="vertical-menu">
+<a href="#" class="active">Course List</a>
+<ng-container *ngFor = "let course of courses">
+  <div (click)="onClick(course.id)">
+    <a>{{course.name + course.id}}</a>
+  </div>
+</ng-container>
+</div>
